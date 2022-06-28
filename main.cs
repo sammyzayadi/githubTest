@@ -13,5 +13,13 @@ class Program {
         }
         Console.WriteLine(num);
         return num;
+        }
+    public static void Main (string[] args) {
+        Console.WriteLine("Please enter the degree of the binomial: ");
+        int binom = int.Parse(Console.ReadLine());
+        Console.WriteLine ("Please enter the index of the coefficient: ");
+        int coeff = int.Parse(Console.ReadLine());
+        Console.WriteLine("The result is: ");
+        Program.bico(binom, coeff);
     }
 }
